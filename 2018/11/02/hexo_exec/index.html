@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#常用的hexo指令  1.hexo new [layout] &amp;lt;title&amp;gt; 新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数post代替，如果不想被处理，设置Front-Matter中的layout为false,如果标题包含空格的话，请使用引号括起来。  Hexo 有三种默认布局：post、page 和 dr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/hexo_exec/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#常用的hexo指令  1.hexo new [layout] &amp;lt;title&amp;gt; 新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数post代替，如果不想被处理，设置Front-Matter中的layout为false,如果标题包含空格的话，请使用引号括起来。  Hexo 有三种默认布局：post、page 和 dr">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-02T06:00:30.481Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#常用的hexo指令  1.hexo new [layout] &amp;lt;title&amp;gt; 新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数post代替，如果不想被处理，设置Front-Matter中的layout为false,如果标题包含空格的话，请使用引号括起来。  Hexo 有三种默认布局：post、page 和 dr">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo_exec" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/02/hexo_exec/" class="article-date">
+  <time datetime="2018-11-02T08:09:36.111Z" itemprop="datePublished">2018-11-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#常用的hexo指令</p>
+<hr>
+<h2 id="1-hexo-new-layout-lt-title-gt"><a href="#1-hexo-new-layout-lt-title-gt" class="headerlink" title="1.hexo new [layout] &lt;title&gt;"></a>1.<code>hexo new [layout] &lt;title&gt;</code></h2><blockquote>
+<p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数post代替，如果不想被处理，设置Front-Matter中的layout为false,如果标题包含空格的话，请使用引号括起来。</p>
+</blockquote>
+<p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹<br><br></p>
+<p><code>post ---&gt; source/_posts</code><br><br><code>page ---&gt; source</code><br><br><code>draft ---&gt; source/_drafts</code></p>
+<h2 id="2-hexo-generate"><a href="#2-hexo-generate" class="headerlink" title="2.hexo generate"></a>2.<code>hexo generate</code></h2><p>生成静态文件</p>
+<blockquote>
+<p>-d = –deploy 文件生成后立即部署网站<br><br>-w = –watch 监视文件变动<br><br>简写为<code>hexo -g</code></p>
+</blockquote>
+<h2 id="3-hexo-publish-layout-lt-filename-gt"><a href="#3-hexo-publish-layout-lt-filename-gt" class="headerlink" title="3.hexo publish [layout] &lt;filename&gt;"></a>3.<code>hexo publish [layout] &lt;filename&gt;</code></h2><p>发表草稿</p>
+<h2 id="4-hexo-server"><a href="#4-hexo-server" class="headerlink" title="4.hexo server"></a>4.<code>hexo server</code></h2><p>启动服务器，默认情况下访问<code>http://localhost:4000/</code>,但是如果使用Ctrl+c中断了，那么后面也就无法访问了，因为相当于中断了hexo server</p>
+<blockquote>
+<p>-p = –port 重设端口，如果访问本地4000端口看不到页面，可能就是端口被占用了，重设一个端口即可<br><br>-s = –static 只使用静态文件<br><br>-l = –log 启动日志记录，使用覆盖记录</p>
+</blockquote>
+<h2 id="5-hexo-deploy"><a href="#5-hexo-deploy" class="headerlink" title="5.hexo deploy"></a>5.<code>hexo deploy</code></h2><p>部署网站</p>
+<blockquote>
+<p>-g = –generate 部署之前先生成静态文件<br><br>简写为 <code>hexo -d</code></p>
+</blockquote>
+<h2 id="6-hexo-render-lt-file1-gt-file2"><a href="#6-hexo-render-lt-file1-gt-file2" class="headerlink" title="6.hexo render &lt;file1&gt; [file2] ..."></a>6.<code>hexo render &lt;file1&gt; [file2] ...</code></h2><p>渲染文件</p>
+<blockquote>
+<p>-o = –output 设置输出路径</p>
+</blockquote>
+<h2 id="7-hexo-migrate-lt-type-gt"><a href="#7-hexo-migrate-lt-type-gt" class="headerlink" title="7.hexo migrate &lt;type&gt;"></a>7.<code>hexo migrate &lt;type&gt;</code></h2><p>从其他博客系统迁移内容</p>
+<h2 id="8-hexo-clean"><a href="#8-hexo-clean" class="headerlink" title="8.hexo clean"></a>8.<code>hexo clean</code></h2><p>清除缓存文件db.json和已生成的静态文件public,尤其是更换主题后</p>
+<h2 id="9-hexo-list-lt-type-gt"><a href="#9-hexo-list-lt-type-gt" class="headerlink" title="9.hexo list &lt;type&gt;"></a>9.<code>hexo list &lt;type&gt;</code></h2><p>列出网站资料</p>
+<h2 id="10-hexo-version"><a href="#10-hexo-version" class="headerlink" title="10.hexo version"></a>10.<code>hexo version</code></h2><p>显示hexo版本</p>
+<h2 id="11-其他"><a href="#11-其他" class="headerlink" title="11.其他"></a>11.<code>其他</code></h2><blockquote>
+<p>自定义配置文件的路径:  <code>hexo --config custom.yml</code>执行后将不再使用_config.yml<br><br>启动时用自定义配置文件:  <code>hexo server --config custom.yml</code><br><br>自定义当前的工作目录:  <code>hexo --cwd /path/to/cwd</code><br><br>显示source/_drafts中的草稿:  <code>hexo --draft</code></p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/02/hexo_exec/" data-id="cjnzqqv3h0000nwv3tm2crg4x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/11/02/mp_notice/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/11/02/hexo_build/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/02/params_file/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/02/mp_notice/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/02/hexo_exec/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/02/hexo_build/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/01/nihao/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
